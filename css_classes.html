@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS Classes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 3px 4px;
+            padding: 5px 10px;
+
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #e6e6e6;
+            border-color: #adadad;
+        }
+
+        .button.primary {
+            background-color: #337ab7;
+            border: 1px solid #2e6da4;
+
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    <a href="http://google.com" class="button">
+        Google
+    </a>
+    <a href="http://yandex.com" class="button primary">
+        Yandex
+    </a>
+    <a href="http://fb.com" class="button">
+        Facebook
+    </a>
+    <a href="http://fb.com" class="button primary">
+        Facebook
+    </a>
+    <a href="http://fb.com" class="button">
+        Facebook
+    </a>
+    <a href="http://fb.com" class="button">
+        Facebook
+    </a>
+</body>
+</html>
