@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.wrapper .thumbs {
+
+}
+
+.wrapper .thumbs .thumb {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper .thumbs .thumb .big-image {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper .thumbs .thumb:hover > .big-image {
+    display: block;
+}
