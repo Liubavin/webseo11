@@ -9,34 +9,90 @@
             padding: 0;
             margin: 0;
         }
-
         .cleaner {
             clear: both;
         }
-
         .wrapper {
             width: 1000px;
             margin: 0 auto;
         }
 
-        .wrapper .news {
-            background-color: #e1dfb9;
+        .wrapper .header,
+        .wrapper .footer {
+            margin: 20px 0;
+            padding: 10px;
+
+            border-radius: 5px;
+            box-shadow: 0 0 3px 0 #ccc;
         }
 
+        .wrapper .footer {
+            text-align: center;
+            color: slateblue;
+            font-size: 20px;
+        }
+
+        .wrapper .header .logo:hover {
+            color: #2C5E88;
+        }
+
+        .wrapper .header .logo {
+            margin: 0 0 0 10px;
+
+            color: #2e6da4;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .wrapper .header .phones {
+            float: right;
+        }
+
+        .wrapper .header .phone-number {
+            margin: 0 5px;
+            float: left;
+
+            color: brown;
+            font-family: monospace, serif;
+            line-height: 35px;
+        }
+        .wrapper .news {
+        }
         .wrapper .news .item {
             float: left;
             width: 230px;
             height: 400px;
             margin: 10px;
 
+            cursor: pointer;
             border-radius: 5px;
-            box-shadow: 0 0 3px 0 #000;
+            box-shadow: 0 0 3px 0 #ccc;
             background-color: #ffffff;
         }
+
+        .wrapper .news .item:hover {
+            box-shadow: 0 0 3px 0 #000;
+        }
+
     </style>
 </head>
 <body>
 <div class="wrapper">
+
+    <div class="header">
+        <a class="logo" href="/">
+            MySite.com
+        </a>
+
+        <div class="phones">
+            <div class="phone-number">(044)777-77-77</div>
+            <div class="phone-number">(048)000-00-00</div>
+        </div>
+
+    </div>
+
     <div class="news">
         <div class="item"></div>
         <div class="item"></div>
@@ -50,6 +106,11 @@
 
         <div class="cleaner"></div>
     </div>
+
+    <div class="footer">
+        (c)ItStep. All rights reserved.
+    </div>
+
 </div>
 </body>
 </html>
