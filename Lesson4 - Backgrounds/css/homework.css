@@ -32,6 +32,6 @@
     width: 100%;
 }
 
-.wrapper .thumbs .thumb:hover > .big-image {
+.wrapper .thumbs .thumb:hover .big-image {
     display: block;
 }
