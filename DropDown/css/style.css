@@ -66,6 +66,19 @@ header.main .main-menu ul ul li {
 
 header.main li:hover > ul {
     display: block;
+
+    animation-name: fade-in;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
