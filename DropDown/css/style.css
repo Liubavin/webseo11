@@ -67,17 +67,21 @@ header.main .main-menu ul ul li {
 header.main li:hover > ul {
     display: block;
 
-    animation-name: fade-in;
-    animation-duration: .4s;
+    animation-name: drop-down;
+    animation-duration: 1.4s;
     animation-timing-function: ease;
 }
 
-@keyframes fade-in {
-    from {
+@keyframes drop-down {
+    0% {
         opacity: 0;
+        max-height: 0px;
     }
-    to {
+    50% {
         opacity: 1;
+    }
+    100% {
+        max-height: 500px;
     }
 }
 
