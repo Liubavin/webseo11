@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .col-4:last-child {
+            width: 33.34%;
+        }
+
+        .col-4 {
+            box-sizing: border-box;
+            width: 33.33%;
+            height: 300px;
+            float: left;
+
+            padding: 10px;
+        }
+
+        .col-4 .inner {
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="col-4">
+    <div class="inner"></div>
+</div>
+<div class="col-4">
+    <div class="inner"></div>
+</div>
+<div class="col-4">
+    <div class="inner"></div>
+</div>
+</body>
+</html>
