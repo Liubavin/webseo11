@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Inputs</title>
+    <style>
+        table tr td:first-child {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,7 +38,42 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" align="right">
+            <td>Цвет глаз (о.О):</td>
+            <td>
+                <input type="color" name="eye-color">
+            </td>
+        </tr>
+        <tr>
+            <td>Личное дело:</td>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+            <td>Уровень IQ:</td>
+            <td>
+                <input type="range">
+            </td>
+        </tr>
+        <tr>
+            <td>Количество котов:</td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Кнопацка">
+            </td>
+            <td>
+                <button>Кнопацка HTML5</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset">
+            </td>
+            <td>
                 <input type="submit" value="GO!!!">
             </td>
         </tr>
