@@ -8,15 +8,22 @@
             text-align: right;
         }
 
-        input[type='text'] {
+        input[type='text'],
+        input[type='password'],
+        input[type='email'],
+        input[type='date'] {
             padding: 3px 5px;
 
             outline: none;
+            background-color: #f5f5f5;
             border: 1px solid #adadad;
             border-radius: 5px;
         }
 
-        input[type='text']:focus {
+        input[type='text']:focus,
+        input[type='password']:focus,
+        input[type='email']:focus,
+        input[type='date']:focus {
             border: 1px solid #2e6da4;
         }
     </style>
