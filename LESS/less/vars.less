@@ -1,0 +1,22 @@
+@main-color: #ccc;
+@light-color: @main-color + #111;
+
+body {
+  background-color: @light-color;
+}
+
+.bordered {
+  border: 1px dashed red;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  .bordered;
+}
+
+p {
+  font-family: cursive, fantasy;
+  .bordered;
+}
